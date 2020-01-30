@@ -1,10 +1,4 @@
 ages = [24, 30, 18, 20, 41]
-class Ages
-  attr_reader :ages
-
-  def initialize(ages)
-    @ages = ages
-  end
 
 #1
   def ages_sum(array)
@@ -57,7 +51,27 @@ def sum_divide(num, index)
   num / index
 end
 
+#8
+def square_root(num)
+  Math.sqrt(num)
 end
+
+# def standard_deviation(array)
+#   amount = ages_index(array)
+#   total = ages_sum(array)
+#   average = ages_average(total, amount)
+#   subtract = ages_subtract(array, average)
+#   squared = square_each(subtract)
+#   divided = sum_divide(squared, amount)
+
+
+
+
+  # puts square_root(divided).round(2)
+# 
+# puts standard_deviation(ages)
+
+
 
 
 
