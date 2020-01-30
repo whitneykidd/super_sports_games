@@ -1,3 +1,4 @@
+require './lib/standard_deviation'
 class Event
   attr_reader :name, :ages
 
@@ -13,13 +14,16 @@ class Event
   def min_age (min_age)
     @age.min
   end
-  
+
   def average_age
    sum = 0
    @ages.each do |age|
      sum += age
    end
    sum.round(1) / @ages.count
- end
+  end
 
+  def standard_deviation_age
+     @age.standard_deviation
+  end
 end
