@@ -1,6 +1,5 @@
-require './lib/standard_deviation'
 class Event
-  attr_reader :name, :ages
+  attr_reader :name, :age
 
   def initialize (name, age)
     @name = name
@@ -20,10 +19,12 @@ class Event
    @ages.each do |age|
      sum += age
    end
-   sum.round(1) / @ages.count
+   sum.round(2) / @ages.count
   end
 
   def standard_deviation_age
      @age.standard_deviation
   end
 end
+
+# require "pry"; binding.pry
