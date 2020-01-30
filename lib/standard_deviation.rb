@@ -1,4 +1,4 @@
-# ages = [24, 30, 18, 20, 41]
+ages = [24, 30, 18, 20, 41]
 class Ages
   attr_reader :ages
 
@@ -34,11 +34,36 @@ class Ages
   end
 
 #5
+  def ages_squared(array)
+     squared = []
+    array.each do |age|
+      squared << age ** 2
+    end
+    squared
+  end
 
+#6
+  def square_each(array)
+  subtract_each.each do |subtraction|
+  square_each << (subtraction ** 2)
+  end
+​
+  sum_of_squared = square_each.sum
+
+  end
+
+#7
+def sum_divide(num, index)
+  num / index
+end
 
 end
 
-require "pry"; binding.pry
+
+
+
+
+# require "pry"; binding.pry
 
 
 
